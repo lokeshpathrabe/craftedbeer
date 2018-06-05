@@ -1,0 +1,38 @@
+{
+  "name": "lokeshpathrabe.github.io",
+  "version": "1.0.0",
+  "description": "Basic development setup",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokeshpathrabe/lokeshpathrabe.github.io.git"
+  },
+  "author": "lokesh pathrabe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lokeshpathrabe/lokeshpathrabe.github.io/issues"
+  },
+  "homepage": "https://github.com/lokeshpathrabe/lokeshpathrabe.github.io#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "gulp": "^3.9.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
+  }
+}
