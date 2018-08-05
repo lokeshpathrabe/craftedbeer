@@ -1,0 +1,3 @@
+-> Create detail layout on click of beer panel
+-> create fusion charts for beer stats
+->	User scrollable text to show features of a beer like on webpack website
