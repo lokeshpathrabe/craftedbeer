@@ -1,3 +1,8 @@
+/**
+ * This scripts and related modules need upgrade.
+ * I have moved to webpack-babel configuration and no more use gulp for packaging.
+ */
+
 var gulp = require('gulp');
 //https://fettblog.eu/gulp-browserify-multiple-bundles/
 var browserify = require('browserify'),

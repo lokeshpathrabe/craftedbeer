@@ -2,7 +2,7 @@ import {Panel, FormGroup, HelpBlock, ControlLabel, FormControl, Thumbnail, Col, 
 import FilterPanel from './FilterPanel';
 import Shelf from './Shelf';
 import React from 'react';
-
+import './css/craftedBeer.scss';
 export default class Dashboard extends React.Component {
  
   constructor(props){
