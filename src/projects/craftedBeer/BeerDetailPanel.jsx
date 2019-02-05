@@ -2,17 +2,18 @@ import {Panel, FormGroup, HelpBlock, ControlLabel, FormControl, Thumbnail, Col, 
 import React from 'react';
 
 export default class BeerDetailPanel extends React.Component {
-    constructor(props){
-            super(props);
-    }
-    
     render(){
-        let beer = this.props.beer;
+        const { beer, onClick} = this.props;
         return(
-            <Col sm={12} style={{display:'inline-block'}}>
-                <Panel 
-                onClick={this.props.expandBeerPanel}>
-                    <Panel.Heading><img className='beer-image' src={beer.image}/></Panel.Heading>
+            <Col className="detail-panel" sm={12} style={{position:'fixed'}}>
+                <Panel>
+                    <Panel.Heading>
+                        <img className='beer-image' src={beer.image}/>
+                        <i 
+                            class="fas fa-times-circle" 
+                            style={{'vertical-align': 'top', 'float': 'right'}}
+                            onClick={onClick}></i>
+                    </Panel.Heading>
                     <Panel.Body>
                         <h3>{beer.name}</h3>
                         <p>{beer.description}</p>

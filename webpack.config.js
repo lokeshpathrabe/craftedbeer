@@ -1,6 +1,7 @@
 'use strict'
 
 var path = require('path');
+var webpack = new require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const bundleExtractPlugin = new ExtractTextPlugin({
     filename: './css/style.css',
@@ -17,11 +18,19 @@ const bundleExtractPlugin = new ExtractTextPlugin({
  */
 
 module.exports = {
+    mode: 'development',
+    optimization: {
+        minimize: false
+      },
     entry: './src/script.jsx',
     output: {
         path: path.resolve(__dirname, "build"),
         filename: 'index.js',
         publicPath: '/build'
+    },
+    devServer: {
+        contentBase: './',
+        hot: true
     },
     module: {
         rules: [
@@ -50,7 +59,7 @@ module.exports = {
             }
         ]
     },
-    plugins: [bundleExtractPlugin],
+    plugins: [bundleExtractPlugin, new webpack.HotModuleReplacementPlugin()],
     resolve: {
         extensions: ['.js', '.jsx'],
     }
