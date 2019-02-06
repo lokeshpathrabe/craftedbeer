@@ -1,0 +1,55 @@
+body{
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/food.png")
+      
+    }
+    .panel-heading{
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .beer-image{
+        width: 100px;
+        height: 220px;
+    }
+    
+    .beer-icon{
+    font-size: 200px;  
+    }
+    
+    .panel-body{
+    text-align: center;
+    }
+    
+    .panel.panel-default:hover{
+        cursor: pointer;
+    }
+    
+    .panel.panel-default{
+        padding: 15px;
+    }
+
+    .shadow{
+        display: block;
+        position: fixed;
+        background: #d17527cf;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        cursor: auto;
+    }
+
+    .detail-panel{
+        display: inline-block;
+        top: 20px;
+        left: 0px;
+        z-index: 1;
+        background: #ffffffad;
+        border-radius: 50px;
+        border: 2px solid #a84013;
+        cursor: auto;
+    }
+
+    .beer-tile{
+        vertical-align: top;
+    }
